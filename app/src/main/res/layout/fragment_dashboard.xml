@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:orientation="vertical"
+        tools:ignore="MissingConstraints">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            tools:ignore="MissingConstraints"
+            android:background="@color/white">
+
+
+            <RadioGroup
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <RadioButton
+                    android:id="@+id/btn_shopping_cart"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/selector_radiobutton"
+
+                    android:button="@null"
+                    android:gravity="center"
+                    android:padding="8dp"
+                    android:text="购物车"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    >
+                </RadioButton>
+
+                <RadioButton
+                    android:layout_marginLeft="5dp"
+                    android:id="@+id/btn_often_buy"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/selector_radiobutton"
+                    android:button="@null"
+                    android:gravity="center"
+                    android:padding="8dp"
+                    android:text="我常买"
+                    android:textSize="16sp"
+                    android:textStyle="bold" >
+
+                </RadioButton>
+            </RadioGroup>
+
+            <Button
+                android:id="@+id/delete"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="230dp"
+                android:background="@null"
+                android:text="删除"
+                android:textSize="16sp">
+
+            </Button>
+
+        </LinearLayout>
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            tools:ignore="MissingConstraints"
+            >
+            <LinearLayout
+                android:id="@+id/layout_content_item"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:layout_above="@+id/layout_content_all">
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/recycle"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/white">
+
+                </androidx.recyclerview.widget.RecyclerView>
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/recycle1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    tools:layout_editor_absoluteX="0dp"
+                    tools:layout_editor_absoluteY="40dp"
+                    android:visibility="gone"
+                    tools:ignore="MissingConstraints">
+
+                </androidx.recyclerview.widget.RecyclerView>
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/layout_content_all"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:orientation="horizontal"
+                android:layout_alignParentBottom="true">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2.5"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <CheckBox
+                        android:id="@+id/chekbox_all"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="4dp"
+                        android:checkMark="?android:attr/listChoiceIndicatorMultiple"
+                        android:gravity="center"
+                        android:minHeight="64dp"
+                        android:paddingLeft="10dp"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:button="@null"
+                        android:visibility="visible"
+                        android:background="@drawable/checkbox_back"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="全选"
+                        android:textSize="16sp"
+                        android:textStyle="bold"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="120dp"
+                        android:text="合计:"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/tv_total_price"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="￥0.00"
+                        android:textColor="#D52E2E"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/tv_go_to_pay"
+                    android:layout_width="100dp"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginRight="5dp"
+                    android:background="@drawable/textview_style"
+                    android:clickable="true"
+                    android:gravity="center"
+                    android:text="结算(0)"
+                    android:textColor="#FAFAFA" />
+            </LinearLayout>
+        </RelativeLayout>
+
+
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

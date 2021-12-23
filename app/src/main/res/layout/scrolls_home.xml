@@ -1,0 +1,242 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ScrollView01"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:scrollbars="none"
+    android:padding="5dp"
+    android:background="#E8E3E3"
+>
+    <LinearLayout
+        android:id="@+id/layout"
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="#ffffff"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp">
+        <RelativeLayout
+            android:id="@+id/rr1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="visible">
+
+            <RelativeLayout
+                android:id="@+id/r2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <Button
+                    android:id="@+id/b1"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginStart="25dp"
+                    android:layout_marginTop="25dp"
+                    android:layout_marginEnd="25dp"
+                    android:layout_marginBottom="25dp"
+                    android:background="@drawable/hamburger" />
+
+                <TextView
+                    android:layout_width="80dp"
+                    android:layout_height="30dp"
+                    android:layout_below="@+id/b1"
+                    android:gravity="center"
+                    android:text="餐饮熟食" />
+            </RelativeLayout>
+            <RelativeLayout
+                android:id="@+id/r3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/r2">
+
+                <Button
+                    android:id="@+id/b2"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_margin="25dp"
+                    android:background="@drawable/doughnut" />
+
+                <TextView
+                    android:layout_width="80dp"
+                    android:layout_height="30dp"
+                    android:layout_below="@+id/b2"
+                    android:gravity="center"
+                    android:text="甜品烘焙" />
+            </RelativeLayout>
+            <RelativeLayout
+                android:id="@+id/r4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/r3">
+
+                <Button
+                    android:id="@+id/b3"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_margin="25dp"
+                    android:background="@drawable/greenpepper" />
+
+                <TextView
+                    android:layout_width="80dp"
+                    android:layout_height="30dp"
+                    android:layout_below="@+id/b3"
+                    android:gravity="center"
+                    android:text="果蔬鲜花" />
+            </RelativeLayout>
+            <RelativeLayout
+                android:id="@+id/r5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/r4">
+
+                <Button
+                    android:id="@+id/b4"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_margin="25dp"
+                    android:background="@drawable/alcohol" />
+
+                <TextView
+                    android:layout_width="80dp"
+                    android:layout_height="30dp"
+                    android:layout_below="@+id/b4"
+                    android:gravity="center"
+                    android:text="酒水饮料" />
+            </RelativeLayout>
+            <RelativeLayout
+                android:id="@+id/r6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/r5">
+
+                <Button
+                    android:id="@+id/b5"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_margin="25dp"
+                    android:background="@drawable/tomato" />
+
+                <TextView
+                    android:layout_width="80dp"
+                    android:layout_height="30dp"
+                    android:layout_below="@+id/b5"
+                    android:gravity="center"
+                    android:text="鲜果水果" />
+            </RelativeLayout>
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/rrr1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/rr1"
+            android:visibility="visible">
+            <RelativeLayout
+                android:id="@+id/rr2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                >
+
+                <Button
+                    android:id="@+id/bb1"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginStart="25dp"
+                    android:layout_marginTop="25dp"
+                    android:layout_marginEnd="25dp"
+                    android:layout_marginBottom="25dp"
+                    android:background="@drawable/meat" />
+
+                <TextView
+                    android:layout_width="80dp"
+                    android:layout_height="30dp"
+                    android:layout_below="@+id/bb1"
+                    android:gravity="center"
+                    android:text="肉禽蛋品" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rr3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/rr2">
+
+                <Button
+                    android:id="@+id/bb2"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_margin="25dp"
+                    android:background="@drawable/milk" />
+
+                <TextView
+                    android:layout_width="80dp"
+                    android:layout_height="30dp"
+                    android:layout_below="@+id/bb2"
+                    android:gravity="center"
+                    android:text="美妆母婴" />
+            </RelativeLayout>
+            <RelativeLayout
+                android:id="@+id/rr4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/rr3">
+
+                <Button
+                    android:id="@+id/bb3"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_margin="25dp"
+                    android:background="@drawable/chicken" />
+
+                <TextView
+                    android:layout_width="80dp"
+                    android:layout_height="30dp"
+                    android:layout_below="@+id/bb3"
+                    android:gravity="center"
+                    android:text="火锅到家" />
+            </RelativeLayout>
+            <RelativeLayout
+                android:id="@+id/rr5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/rr4">
+
+                <Button
+                    android:id="@+id/bb4"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_margin="25dp"
+                    android:background="@drawable/coffee" />
+
+                <TextView
+                    android:layout_width="80dp"
+                    android:layout_height="30dp"
+                    android:layout_below="@+id/bb4"
+                    android:gravity="center"
+                    android:text="休闲饮品" />
+            </RelativeLayout>
+            <RelativeLayout
+                android:id="@+id/rr6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/rr5">
+
+                <Button
+                    android:id="@+id/bb5"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_margin="25dp"
+                    android:background="@drawable/pear" />
+
+                <TextView
+                    android:layout_width="80dp"
+                    android:layout_height="30dp"
+                    android:layout_below="@+id/bb5"
+                    android:gravity="center"
+                    android:text="其他果蔬" />
+            </RelativeLayout>
+        </RelativeLayout>
+
+
+    </LinearLayout>
+</ScrollView>
